@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.helloButton)
         button.setOnClickListener {
             Log.v("Hello world", "Button clicked!")
-            Toast.makeText(this, "Hello to you too!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.hello_toast_text), Toast.LENGTH_SHORT).show()
         }
     }
 }
